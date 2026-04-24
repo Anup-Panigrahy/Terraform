@@ -5,7 +5,7 @@ variable "ami" {
 
 variable "instance_type" {
     description="Amazon Instance Type"
-    default="t2.micro"
+    default="t3.micro"
 }
 
 variable "instances_count" {

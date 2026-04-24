@@ -1,0 +1,16 @@
+provider "aws" {
+    region="ap-south-1"
+#	access_key="AKIA6CJLBZLYLKZYTD5P"
+#	secret_key="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"
+}
+
+resource "aws_instance" "AWS Server" {
+    ami="${var.ami}"
+	count="${var.instances_count}"
+    instance_type="${var.instance_type}"
+	key_name="AWS-1stKeyPair-2026"
+	vpc_security_group_ids=["sg-01911be532bafb8c7"]
+	tags={
+	    Name="My EC2 VM by First Terraform Variable Concept"
+	}
+}
