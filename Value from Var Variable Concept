@@ -4,7 +4,7 @@ provider "aws" {
 #	secret_key="f3iANzBhwdAM2Ad/VVYPfsMXrqElW59IY0adLcQo"
 }
 
-resource "aws_instance" "AWS Server" {
+resource "aws_instance" "AWS_Server" {
     ami="${var.ami}"
 	count="${var.instances_count}"
     instance_type="${var.instance_type}"
