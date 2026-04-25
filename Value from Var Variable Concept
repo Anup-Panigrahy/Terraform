@@ -11,6 +11,6 @@ resource "aws_instance" "AWS_Server" {
 	key_name="AWS-1stKeyPair-2026"
 	vpc_security_group_ids=["sg-01911be532bafb8c7"]
 	tags={
-	    Name="My EC2 VM by First Terraform Variable Concept"
+	    Name="EC2 VM -${count.index}by First Terraform Variable Concept"
 	}
 }
