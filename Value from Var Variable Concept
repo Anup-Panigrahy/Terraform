@@ -14,7 +14,7 @@ resource "aws_instance" "AWS_Server" {
 	    Name="EC2 VM -${count.index}by First Terraform Variable Concept"
 	}
 }
-
+----------------------------------------------------------------------------------------
 /*
 [ec2-user@ip-172-31-38-29 ex-3]$ terraform plan
 
