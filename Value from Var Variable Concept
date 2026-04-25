@@ -16,6 +16,8 @@ resource "aws_instance" "AWS_Server" {
 }
 ----------------------------------------------------------------------------------------
 /*
+Please see var.tf file which is present in this Terraform repository
+--------------------------------------------------------------------------------------------------------------------------
 [ec2-user@ip-172-31-38-29 ex-3]$ terraform plan
 
 Planning failed. Terraform encountered an error while generating this plan.
