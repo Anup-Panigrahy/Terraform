@@ -9,6 +9,6 @@ resource "aws_instance" "MyAWSVM" {
 	vpc_security_group_ids=["sg-01911be532bafb8c7"]
     user_data="${file("installHttpd.sh")}"
 	tags={
-	    Name="EC2 VM by Terraform script without hardcode of Access Key and Secret Key"
+	    Name="Static Website by UserData in 1 Terraform server"
 	}
 }
