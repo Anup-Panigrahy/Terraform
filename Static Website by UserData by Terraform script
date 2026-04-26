@@ -12,3 +12,8 @@ resource "aws_instance" "MyAWSVM" {
 	    Name="Static Website by UserData in 1 Terraform server"
 	}
 }
+-------------------------------------
+/*
+I have not tested this.
+This file has dependency with installHttpd.sh file which is present in this repository.
+---------------------------------------------------------------------------------------------------
