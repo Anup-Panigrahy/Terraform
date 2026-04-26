@@ -1,0 +1,17 @@
+provider "aws" {
+    region="ap-south-1"
+}
+
+resource "aws_s3_bucket" "Terraform_S3_bucket_26042026_anup" {
+    
+    bucket="my-terraform-test-bucket_26042026_anup"
+    acl="private"
+
+    versioning{
+        enabled=true
+    }
+
+    tags= {
+        Name="1st bucket by Terraform Script"
+          }
+}
