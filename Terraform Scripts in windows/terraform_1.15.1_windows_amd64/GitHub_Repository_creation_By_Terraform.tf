@@ -17,7 +17,13 @@ resource "github_repository" "repository_crteation_in_GitHub_by_terraform" {
   description = "My awesome codebase"
   visibility  = "public"
 }
+<<<<<<< HEAD
 ------------------------------------------------------------------------------------
+=======
+-----------------------------------------------------------------------------------------------------------------------
+I have done this in windows OS in my local machine by installing Terraform in my system
+-----------------------------------------------------------------------------------------------------------------------
+>>>>>>> b14d17fdc0d99445fe49da5966871f31fa3d1ee3
 D:\DevOps_Cloud\DevOps\Terraform\Terraform Scripts in windows\terraform_1.15.1_windows_amd64>terraform init
 Initializing provider plugins found in the configuration...
 - Reusing previous version of integrations/github from the dependency lock file
