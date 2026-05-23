@@ -41,5 +41,14 @@ Ex :
       ~ update in-place
 
       ~ instance_type                        = "t3.small" -> "t3.micro"
+3. Default values are generally not considered to be our desired state.
+   If we normally change these default values in any cloud , it will have no impact in terraform plan and terraform apply.
 
+   we can know these default values in respective cloud console.
 
+   ex:
+   If we will change security group in AWS conslole from 1 to other,
+   it won't show new one because if we will run terraform plan and terraform apply ,
+   we can get to know that -> No changes. Your infrastructure matches the configuration
+   because
+   we have not changed anything in our terraform(.tf) file with respect to security group for that EC2 insatnce.
