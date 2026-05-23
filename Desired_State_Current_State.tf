@@ -31,3 +31,15 @@ Ex :
       We can know this behaviour of REFLECTING ->
       ----------------------------------------------------------
       If we will run terraform plan
+      -------------------------------------
+      then it will show below
+      ~ update in-place
+      ~ instance_type                        = "t3.small" -> "t3.micro"
+
+      terraform apply -auto-approve
+      -------------------------------------
+      ~ update in-place
+
+      ~ instance_type                        = "t3.small" -> "t3.micro"
+
+
