@@ -12,11 +12,11 @@ resource "aws_iam_user" "AWS_Cloud_Users" {
   name  = var.user_names[count.index]
 }
 
-output "user_names" {
+output "user_names" {                                                         // just for displaying users' name
   value = aws_iam_user.AWS_Cloud_Users[*].name
 }
 
-output "users_count" {
+output "users_count" {                                                        // just for displaying users count
   value = length(aws_iam_user.AWS_Cloud_Users)
 }
 
