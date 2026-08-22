@@ -19,3 +19,12 @@ output "user_names" {
 output "users_count" {
   value = length(aws_iam_user.AWS_Cloud_Users)
 }
+
+// Output will be  --> 
+-------------------------------------------------------------
+user_names = [
+  "Micky",
+  "Rohan",
+  "Pravin",
+]
+users_count = 3
