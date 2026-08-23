@@ -30,12 +30,7 @@ resource "aws_instance" "EC2_Instance_creation_by_using_Terraform_Function" {
 
 --------------------------
 ------------------------------
-
-
-
-
-
-
+Terraform Function Main Link : https://developer.hashicorp.com/terraform/language/functions
 
 lookup(
     {
